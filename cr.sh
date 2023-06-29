@@ -307,6 +307,8 @@ update_index() {
         args+=(--config "$config")
     fi
 
+    args+=(--packages-with-index)
+
     echo 'Updating charts repo index...'
     cr index "${args[@]}"
 }
