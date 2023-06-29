@@ -295,6 +295,8 @@ release_charts() {
         args+=(--make-release-latest=false)
     fi
 
+    args+=(--packages-with-index)
+
     echo 'Releasing charts...'
     cr upload "${args[@]}"
 }
