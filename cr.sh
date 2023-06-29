@@ -308,6 +308,7 @@ update_index() {
     fi
 
     args+=(--packages-with-index)
+    args+=(--index-path=.)
 
     echo 'Updating charts repo index...'
     cr index "${args[@]}"
